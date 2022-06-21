@@ -147,74 +147,77 @@ class _DashboardState extends State<Dashboard> {
                       )),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsets.only(bottom: 16, top: 25, left: 15, right: 15),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Color.fromARGB(255, 255, 252, 251),
-                        style: BorderStyle.solid,
-                        width: 1.0,
+                  padding: const EdgeInsets.only(top: 25, left: 15, right: 15),
+                  child: GestureDetector(
+                    onTap: (() {
+                      
+                    }),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Color.fromARGB(255, 255, 252, 251),
+                          style: BorderStyle.solid,
+                          width: 1.0,
+                        ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    height: 120,
-                    width: MediaQuery.of(context).size.width - 32,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Container(
-                          width: deviceHeight(context) * .15,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(5),
-                              image: const DecorationImage(
-                                  image: AssetImage('images/doctoer.jpeg'))),
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        Flexible(
-                            child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(top: 9),
-                              child: Text('Dr. Armon',
-                                  overflow: TextOverflow.ellipsis,
-                                  maxLines: 1,
-                                  style: Theme.of(context).textTheme.headline5),
-                            ),
-                            const Text(
-                              'pallu doc',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(fontSize: 15),
-                            ),
-                            const SizedBox(
-                              height: 35,
-                            ),
-                            Container(
-                              height: 23,
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 13, vertical: 3),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(4),
-                                  color: Color.fromARGB(255, 210, 227, 211)),
-                              child: const Text(
-                                'Available',
-                                style: TextStyle(fontSize: 14),
+                      height: 120,
+                      width: MediaQuery.of(context).size.width - 32,
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Container(
+                            width: deviceHeight(context) * .15,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                image: const DecorationImage(
+                                    image: AssetImage('images/doctoer.jpeg'))),
+                          ),
+                          const SizedBox(
+                            width: 16,
+                          ),
+                          Flexible(
+                              child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 9),
+                                child: Text('Dr. Armon',
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 1,
+                                    style: Theme.of(context).textTheme.headline5),
                               ),
-                            )
-                          ],
-                        ))
-                      ],
+                              const Text(
+                                'pallu doc',
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 1,
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              const SizedBox(
+                                height: 35,
+                              ),
+                              Container(
+                                height: 23,
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 13, vertical: 3),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4),
+                                    color: Color.fromARGB(255, 210, 227, 211)),
+                                child: const Text(
+                                  'Available',
+                                  style: TextStyle(fontSize: 14),
+                                ),
+                              )
+                            ],
+                          ))
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding:
-                      EdgeInsets.only(bottom: 16, top: 25, left: 15, right: 15),
+                  padding: EdgeInsets.only(top: 20, left: 15, right: 15),
                   child: Container(
                     decoration: BoxDecoration(
                       border: Border.all(
