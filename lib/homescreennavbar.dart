@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/doctordetails.dart';
 
 import 'reusable/hotels.dart';
 
@@ -150,7 +151,12 @@ class _DashboardState extends State<Dashboard> {
                   padding: const EdgeInsets.only(top: 25, left: 15, right: 15),
                   child: GestureDetector(
                     onTap: (() {
-                      
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Doctordeatils(),
+                        ),
+                      );
                     }),
                     child: Container(
                       decoration: BoxDecoration(
@@ -186,7 +192,8 @@ class _DashboardState extends State<Dashboard> {
                                 child: Text('Dr. Armon',
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 1,
-                                    style: Theme.of(context).textTheme.headline5),
+                                    style:
+                                        Theme.of(context).textTheme.headline5),
                               ),
                               const Text(
                                 'pallu doc',
