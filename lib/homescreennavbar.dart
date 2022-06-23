@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/doctordetails.dart';
 
-import 'reusable/hotels.dart';
+// import 'reusable/hotels.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -81,17 +81,27 @@ class _DashboardState extends State<Dashboard> {
                               ),
                             ],
                           ),
-                          Padding(
-                              padding: EdgeInsets.only(
-                                  right: deviceWidth(context) * 0.03,
-                                  bottom: deviceWidth(context) * 0.09),
-                              child: CircleAvatar(
-                                radius: 28.0,
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(50.0),
-                                  child: Image.asset('images/front.jpg'),
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Doctordeatils(),
                                 ),
-                              )),
+                              );
+                            },
+                            child: Padding(
+                                padding: EdgeInsets.only(
+                                    right: deviceWidth(context) * 0.03,
+                                    bottom: deviceWidth(context) * 0.09),
+                                child: CircleAvatar(
+                                  radius: 28.0,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(50.0),
+                                    child: Image.asset('images/front.jpg'),
+                                  ),
+                                )),
+                          ),
                         ],
                       ),
                     ),

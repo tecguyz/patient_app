@@ -140,7 +140,7 @@ class _VerificatoinState extends State<Verificatoin> {
                     ),
                   ),
 
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
 
@@ -175,7 +175,7 @@ class _VerificatoinState extends State<Verificatoin> {
                                   color: Colors.white,
                                   size: 30,
                                 )
-                              : Text(
+                              : const Text(
                                   "Verify",
                                   style: TextStyle(color: Colors.white),
                                 ),
