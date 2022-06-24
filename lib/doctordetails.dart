@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import 'addpatientdetails.dart';
 import 'reusable/custombttnauth.dart';
 

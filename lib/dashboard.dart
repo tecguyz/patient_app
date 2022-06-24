@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/doctordetails.dart';
+import 'package:flutter_application_1/userprofile.dart';
 
 // import 'reusable/hotels.dart';
 
@@ -86,7 +87,7 @@ class _DashboardState extends State<Dashboard> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => Doctordeatils(),
+                                  builder: (context) => Userprofile(),
                                 ),
                               );
                             },
@@ -450,35 +451,36 @@ class _DashboardState extends State<Dashboard> {
             ),
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home_outlined,
-                size: 30,
-              ),
-              label: "Home",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_border_rounded,
-                  color: Colors.black38, size: 25),
-              label: "Search",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.star_border_rounded,
-                  color: Colors.black38, size: 30),
-              label: "Favourites",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline_rounded,
-                  color: Colors.black38, size: 30),
-              label: "Profile",
-            ),
-          ],
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: const Color.fromRGBO(3, 100, 176, 65),
-        ));
+        // bottomNavigationBar: BottomNavigationBar(
+        //   showSelectedLabels: false,
+        //   showUnselectedLabels: false,
+        //   items: const [
+        //     BottomNavigationBarItem(
+        //       icon: Icon(
+        //         Icons.home_outlined,
+        //         size: 30,
+        //       ),
+        //       label: "Home",
+        //     ),
+        //     BottomNavigationBarItem(
+        //       icon: Icon(Icons.favorite_border_rounded,
+        //           color: Colors.black38, size: 25),
+        //       label: "Search",
+        //     ),
+        //     BottomNavigationBarItem(
+        //       icon: Icon(Icons.star_border_rounded,
+        //           color: Colors.black38, size: 30),
+        //       label: "Favourites",
+        //     ),
+        //     BottomNavigationBarItem(
+        //       icon: Icon(Icons.person_outline_rounded,
+        //           color: Colors.black38, size: 30),
+        //       label: "Profile",
+        //     ),
+        //   ],
+        //   type: BottomNavigationBarType.fixed,
+        //   selectedItemColor: const Color.fromRGBO(3, 100, 176, 65),
+        // ),
+        );
   }
 }
